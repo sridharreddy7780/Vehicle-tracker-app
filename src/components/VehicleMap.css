@@ -1,0 +1,87 @@
+.map-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.map {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.vehicle-icon span {
+  font-size: 24px;
+}
+
+.controls-panel {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--surface);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px var(--panel-shadow);
+  width: 250px;
+  z-index: 1000;
+}
+
+.controls-panel h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--text);
+  text-align: center;
+}
+
+.info p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.play-btn,
+.reset-btn {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin: 0 4px;
+}
+
+.play-btn.play {
+  background-color: var(--success);
+  color: var(--surface);
+}
+
+.play-btn.play:hover {
+  background-color: var(--success-variant);
+}
+
+.play-btn.pause {
+  background-color: var(--danger);
+  color: var(--surface);
+}
+
+.play-btn.pause:hover {
+  background-color: var(--danger-variant);
+}
+
+.reset-btn {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.reset-btn:hover {
+  background-color: rgba(0,0,0,0.04);
+}
